@@ -5,3 +5,10 @@ ____
 ####To generate a new Bucket that stores resources
 These are what the viewer needs to pull from in order to display content
 [viewer-curl-sample](https://github.com/Autodesk-Forge/viewer-curl-sample)
+
+#### Steps for creating a new viewer
+1. Run the first 6 commands in the viewer-curl-sample command line tools. This allows you to create a bucket with an object.
+2. Within the object html file, copy the object urn.
+3. Paste the urn into the index.html file in the outermost directory
+4. Copy the access token from the data/access_token file and replace the one within index.html
+5. load index.html within the browser

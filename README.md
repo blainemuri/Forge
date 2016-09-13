@@ -17,10 +17,14 @@ To Run
 ------
 > This requires having an installation of node.js on your machine and a unix environment
 
-* `git clone git@github.com:blaine1726/Forge.git`
-* `cd Forge`
-* `npm install`
-* `npm run start`
+`git clone git@github.com:blaine1726/Forge.git`
+
+`cd Forge`
+
+`npm install`
+
+`npm run start`
+
 
 * The document does not auto-reload the javascript
 * Javascript files must be added/edited in the src/ folder

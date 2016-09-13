@@ -25,7 +25,11 @@ To Run
 
 `npm run start`
 
-
 * The document does not auto-reload the javascript
 * Javascript files must be added/edited in the `src/` folder
 * ES6 is enabled for compile using babel, and is compiled from the `src/` folder to the `dist/` folder
+
+Dev model
+---------
+
+`npm run dev`

@@ -5,9 +5,9 @@
   "author": "Blaine Muri",
   "main": "server.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "nodemon --exec babel-node src/index.js",
-    "prestart": "babel src --out-dir dist"
+    "dev": "nodemon --exec babel-node src/*.js",
+    "prestart": "babel src --out-dir dist",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "express": "^4.13.3"

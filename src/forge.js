@@ -1,7 +1,7 @@
 var viewerApp;
 var options = {
   env: 'AutodeskProduction',
-  accessToken: 'FcyfRv0RcGAocVL5z4tKsYwgOwOp'
+  accessToken: 'RmI1vDH7PW1GBry3jbuA8WLeXKGN'
   // getAccessToken: function(onGetAccessToken) {
   //   var accessToken = 'B39PbkK9nwRrv4ny4cTXYBey6PDG';
   //   var expireTimeSeconds = 60*30;
@@ -12,10 +12,14 @@ var document2 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL3J
 
 Autodesk.Viewing.Initializer(options, onInitialized);
 
+// The viewer that is being used
+var domContainer = document.getElementById('viewer');
+var viewer = new Autodesk.Viewing.Private.GuiViewer3D(domContainer);
+
 function onInitialized() {
-  console.log(Autodesk);
-  viewerApp = new Autodesk.A360ViewingApplication('viewer');
-  viewerApp.registerViewer(viewerApp.k3D, Autodesk.Viewing.Private.GuiViewer3D);
+  // console.log(Autodesk);
+  // viewerApp = new Autodesk.A360ViewingApplication('viewer');
+  // viewerApp.registerViewer(viewerApp.k3D, Autodesk.Viewing.Private.GuiViewer3D);
   Autodesk.Viewing.Document.load(
     document1,
     (model)=> {
@@ -27,9 +31,6 @@ function onInitialized() {
           'role': '3d'},
       true);
 
-      var domContainer = document.getElementById('viewer');
-
-      var viewer = new Autodesk.Viewing.Private.GuiViewer3D(domContainer);
       viewer.initialize();
       viewer.setLightPreset(8);
 
@@ -48,14 +49,26 @@ function onInitialized() {
       var path = geometryItems3d[0];
 
       var block1 = model.getViewablePath(path);
-      console.log(block1);
 
       viewer.loadModel(model.getViewablePath(path), options);
       viewer.loadModel(model.getViewablePath(path), options2);
+      console.log(model.getRootItem());
     }
   )
   // viewerApp.loadDocumentWithItemAndObject(document1);
   // globalOffset = viewerApp.model.getData().globalOffset;
+}
+//
+// function handleButtonClick(e) {
+//   e.preventDefault
+//   console.log("blah");
+// }
+
+window.handleButtonClick = function (e) {
+  e.preventDefault();
+  var instanceTree = viewer.model.getData().instanceTree;
+  instranceTree.enumNodeFragments(1, function)
+  console.log(viewer.model.getData().instanceTree.getRootId());
 }
 
 

@@ -23,17 +23,19 @@
         </style>
     </head>
     <body>
-        <div id="viewer"></div>
-        <form class="" action="index.html" method="post">
-          <input type="submit" name="button" style="position: fixed; top: 0; left: 0;"></button>
-        </form>
+      <div id="viewer"></div>
 
-        <!-- The Viewer JS -->
-        <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js"></script>
-        <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
-        <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/Autodesk360App.js"></script>
-        <script src="../forge.js">
-
-        </script>
+      <!-- The Viewer JS -->
+      <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js"></script>
+      <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+      <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/Autodesk360App.js"></script>
+      <script src="../forge.js"></script>
+      <button id="btn" type="button" name="button" style="position: fixed; top: 0; left: 0; z-index: 1000000000; padding: 5px; color: black; background-color: #aec6cf"
+              onClick="handleButtonClick(event)">Add Block</button>
+      <script type="text/javascript">
+        function addURN() {
+          console.log("blah");
+        }
+      </script>
     </body>
 </html>

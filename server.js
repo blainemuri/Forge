@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 3000;
 // App
 const app = express();
 
-app.use('/static', express.static('dist'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/', function (req, res) {
-  res.sendFile('/public/index.html');
+  res.render('/public/index.html');
 });
 
 app.listen(PORT);

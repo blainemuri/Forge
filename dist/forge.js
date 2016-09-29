@@ -3,12 +3,9 @@
 var viewerApp;
 var options = {
   env: 'AutodeskProduction',
-  accessToken: '7zclQX2mI0TXIlHI8ZeYWI84ZWXv'
-  // getAccessToken: function(onGetAccessToken) {
-  //   var accessToken = 'B39PbkK9nwRrv4ny4cTXYBey6PDG';
-  //   var expireTimeSeconds = 60*30;
-  // }
+  accessToken: '6UBi5YyrZSoXum5V7vULBBhoeTvd'
 };
+
 var document1 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL0F1Lm9iag==';
 var document2 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL3JzdF9hZHZhbmNlZF9zYW1wbGVfcHJvamVjdC5ydnQ=';
 

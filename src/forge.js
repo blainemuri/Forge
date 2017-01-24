@@ -1,11 +1,10 @@
 var viewerApp;
 var options = {
   env: 'AutodeskProduction',
-  accessToken: '6UBi5YyrZSoXum5V7vULBBhoeTvd'
+  accessToken: 'M4tPuBbckyLhxvtzBATihbLBGn9c'
 };
 
-var document1 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL0F1Lm9iag==';
-var document2 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL3JzdF9hZHZhbmNlZF9zYW1wbGVfcHJvamVjdC5ydnQ=';
+var document1 = 'urn:dXJuOmRYSnVPbUZrYzJzdWIySnFaV04wY3pwdmN5NXZZbXBsWTNRNllteGhjbWN2UVhVdWIySnE=';
 
 Autodesk.Viewing.Initializer(options, onInitialized);
 
@@ -26,7 +25,7 @@ function onInitialized() {
   // viewerApp.registerViewer(viewerApp.k3D, Autodesk.Viewing.Private.GuiViewer3D);
 
   Autodesk.Viewing.Document.load(
-    document2,
+    document1,
     (model)=> {
       var rootItem = model.getRootItem();
 

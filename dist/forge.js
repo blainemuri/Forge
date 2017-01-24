@@ -3,11 +3,10 @@
 var viewerApp;
 var options = {
   env: 'AutodeskProduction',
-  accessToken: '6UBi5YyrZSoXum5V7vULBBhoeTvd'
+  accessToken: 'NeXiKYltUZFwpDgBdSC82eEKGJtf'
 };
 
-var document1 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL0F1Lm9iag==';
-var document2 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL3JzdF9hZHZhbmNlZF9zYW1wbGVfcHJvamVjdC5ydnQ=';
+var document1 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL3JzdF9hZHZhbmNlZF9zYW1wbGVfcHJvamVjdC5ydnQ=';
 
 Autodesk.Viewing.Initializer(options, onInitialized);
 
@@ -23,7 +22,7 @@ function onInitialized() {
   // viewerApp = new Autodesk.A360ViewingApplication('viewer');
   // viewerApp.registerViewer(viewerApp.k3D, Autodesk.Viewing.Private.GuiViewer3D);
 
-  Autodesk.Viewing.Document.load(document2, function (model) {
+  Autodesk.Viewing.Document.load(document1, function (model) {
     var rootItem = model.getRootItem();
 
     var geometryItems3d = Autodesk.Viewing.Document.getSubItemsWithProperties(rootItem, {

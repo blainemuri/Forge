@@ -3,7 +3,7 @@
 var viewerApp;
 var options = {
   env: 'AutodeskProduction',
-  accessToken: 'NeXiKYltUZFwpDgBdSC82eEKGJtf'
+  accessToken: 'vrvprbZnFB62Lzz2qGABmeM4BfVT'
 };
 
 var document1 = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6b3JpZ2luYXRlLWZvcmdlL3JzdF9hZHZhbmNlZF9zYW1wbGVfcHJvamVjdC5ydnQ=';
